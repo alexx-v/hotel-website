@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: $text;
+	font-weight: 400;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	color: $second;
+	outline: none;
+	transition: all 0.5s;
+	text-decoration: none !important;
+
+	&:hover,
+	&:focus {
+		color: $first;
+	}
+}
+
+p {
+	margin-bottom: 15px;
+	padding: 0;
+	font-size: 0.875rem;
+	color: #666;
+}
+
+.visually-hidden {
+	@include visually-hidden();
+}

@@ -1,0 +1,14 @@
+.call {
+	@include padding();
+	background-color: $subBg;
+	& .btn {
+		@include button();
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		font-size: 28px;
+		font-weight: 800;
+		letter-spacing: 2px;
+	}
+}

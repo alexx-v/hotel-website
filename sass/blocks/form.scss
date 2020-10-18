@@ -1,0 +1,19 @@
+.form {
+	& input,
+	& textarea,
+	& .input-group-text,
+	& button {
+		box-shadow: none !important;
+		border-radius: 0;
+	}
+
+	& input:focus,
+	& textarea:focus {
+		border-color: $first;
+	}
+
+	& label {
+		font-size: 0.875rem;
+		font-weight: 600;
+	}
+}

@@ -1,0 +1,43 @@
+.article {
+	& .image {
+		padding: 0;
+		overflow: hidden;
+
+		& img {
+			height: 100%;
+			object-fit: cover;
+			transition: all 0.5s;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	& .content {
+		background-color: $second;
+		padding: 30px;
+		padding-top: 45px;
+
+		& h2 {
+			margin-bottom: 15px;
+			font-weight: 600;
+			color: $first;
+		}
+
+		& p {
+			margin-bottom: 20px;
+			font-size: 1rem;
+			font-weight: 400;
+			text-align: justify;
+			color: $subText;
+		}
+
+		& .btn {
+			@include button-2();
+		}
+	}
+}
+
+@media (min-height: 768px) {
+}

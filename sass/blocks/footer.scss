@@ -1,0 +1,24 @@
+.footer {
+	padding-top: 30px;
+	padding-bottom: 25px;
+	background-color: $second;
+
+	& .social {
+		margin-bottom: 20px;
+	}
+
+	& .copyright {
+		font-size: 18px;
+		color: $text;
+		text-align: center;
+
+		& a {
+			color: $first;
+
+			&:hover,
+			&:focus {
+				color: $white;
+			}
+		}
+	}
+}

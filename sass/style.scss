@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@import 'variables';
+@import 'mixins';
+@import 'core';
+
+@import 'blocks/header';
+@import 'blocks/main-menu';
+@import 'blocks/slider-top';
+@import 'blocks/search';
+@import 'blocks/welcome';
+@import 'blocks/services';
+@import 'blocks/section-header';
+@import 'blocks/rooms';
+@import 'blocks/modal';
+@import 'blocks/slider';
+@import 'blocks/subscribe';
+@import 'blocks/booking';
+@import 'blocks/form';
+@import 'blocks/datepicker';
+@import 'blocks/call';
+@import 'blocks/social';
+@import 'blocks/back-to-top';
+@import 'blocks/footer';
+
+@import 'blocks/about';
+@import 'blocks/article';
+@import 'blocks/login';
+@import 'blocks/contact';

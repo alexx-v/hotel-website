@@ -1,0 +1,21 @@
+.back-to-top {
+	position: fixed;
+	display: none;
+	right: 15px;
+	bottom: 15px;
+	width: 44px;
+	height: 44px;
+	font-size: 22px;
+	text-align: center;
+	line-height: 44px;
+	background-color: $second;
+	color: $first;
+	transition: background-color, color, 300ms;
+	z-index: 9;
+
+	&:hover,
+	&:focus {
+		color: $second;
+		background-color: $first;
+	}
+}

@@ -1,0 +1,6 @@
+.login {
+	@include padding();
+	& .btn {
+		@include button();
+	}
+}

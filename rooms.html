@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hotel ROYAL</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="img/favicon.ico" rel="icon">
+    <link href="img/apple-favicon.png" rel="apple-touch-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css"
+        integrity="sha512-Fppbdpv9QhevzDE+UHmdxL4HoW8HantO+rC8oQB2hCofV+dWV2hePnP5SgiWR1Y1vbJeYONZfzQc5iII6sID2Q=="
+        crossorigin="anonymous" />
+    <link href="css/style.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="header container-fluid">
+        <a class="logo" href="index.html"><img src="./img/logo.jpg" alt="logo"></a>
+        <button class="navbar-toggler" type="button" aria-label="Main menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href='about.html'>About Us</a></li>
+                <li class="active"><a>Rooms</a></li>
+                <li><a href="services.html">Amenities</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <a href="tel:+12345678900" class="phone nav-link"><i class="fa fa-phone"></i> +1 234 567 8900</a>
+    </header>
+
+    <section class="search rooms-page">
+        <div class="container">
+            <h2 class="visually-hidden">Search for available rooms</h2>
+            <form class="form">
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="searchCheckIn">Check-In</label>
+                        <div class="form-group">
+                            <div class="input-group date" data-provide="datepicker">
+                                <input type="text" class="form-control datepicker-input" id="searchCheckIn" />
+                                <div class="input-group-append">
+                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <label for="searchCheckOut">Check-Out</label>
+                        <div class="form-group">
+                            <div class="input-group date" data-provide="datepicker">
+                                <input type="text" class="form-control datepicker-input" id="searchCheckOut" />
+                                <div class="input-group-append">
+                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group col">
+                        <label for="searchAdults">Adults</label>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="searchAdults" min="0" max="10" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group col">
+                        <label for="searchChildren">Children</label>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="searchChildren" min="0" max="10" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <button class="btn btn-block">Search</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="rooms">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Rooms</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in mi libero. Quisque
+                    convallis,
+                    enim at venenatis tincidunt.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <div class="room-img">
+                                <div class="box">
+                                    <img src="img/room/room-1.jpg" alt="Room photo">
+                                    <div class="content">
+                                        <h3>Standard Single</h3>
+                                        <a href="#" data-toggle="modal" data-target="#modalApartment"
+                                            aria-label="Book this apartment"><i class="fa fa-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="room-desc">
+                                <h3>
+                                    <a href="#" data-toggle="modal" data-target="#modalApartment"
+                                        aria-label="Book this apartment">Standard Single</a>
+                                </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p class="room-size"><i class="fa fa-arrow-right"></i> <span>Size: 260 sq ft</span>
+                                    <i class="fa fa-arrow-right"></i> <span>Beds: 2 Single(s)</span></p>
+                                <ul class="room-services">
+                                    <li class="icon-1"><span class="visually-hidden">Secutiry</span></li>
+                                    <li class="icon-2"><span class="visually-hidden">Air conditioner</span></li>
+                                    <li class="icon-3"><span class="visually-hidden">Bathtub</span></li>
+                                    <li class="icon-4"><span class="visually-hidden">Shower</span></li>
+                                    <li class="icon-5"><span class="visually-hidden">Towels</span></li>
+                                    <li class="icon-6"><span class="visually-hidden">TV</span></li>
+                                    <li class="icon-7"><span class="visually-hidden">Wi-Fi</span></li>
+                                    <li class="icon-8"><span class="visually-hidden">Phone</span></li>
+                                    <li class="icon-9"><span class="visually-hidden">Mini bar</span></li>
+                                    <li class="icon-10"><span class="visually-hidden">Kitchen</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="room-price"><span class="from">From</span> <span
+                                    class="price promo-title">$150</span>
+                                <a href="#">Book
+                                    Now</a></p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-md-12">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <div class="room-img">
+                                <div class="box">
+                                    <img src="img/room/room-2.jpg" alt="Room photo">
+                                    <div class="content">
+                                        <h3>Standard Single</h3>
+                                        <a href="#" data-toggle="modal" data-target="#modalApartment"
+                                            aria-label="Book this apartment"><i class="fa fa-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="room-desc">
+                                <h3>
+                                    <a href="#" data-toggle="modal" data-target="#modalApartment"
+                                        aria-label="Book this apartment">Standard Single</a>
+                                </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p class="room-size"><i class="fa fa-arrow-right"></i> <span>Size: 260 sq ft</span>
+                                    <i class="fa fa-arrow-right"></i> <span>Beds: 2 Single(s)</span></p>
+                                <ul class="room-services">
+                                    <li class="icon-1"><span class="visually-hidden">Secutiry</span></li>
+                                    <li class="icon-2"><span class="visually-hidden">Air conditioner</span></li>
+                                    <li class="icon-3"><span class="visually-hidden">Bathtub</span></li>
+                                    <li class="icon-4"><span class="visually-hidden">Shower</span></li>
+                                    <li class="icon-5"><span class="visually-hidden">Towels</span></li>
+                                    <li class="icon-6"><span class="visually-hidden">TV</span></li>
+                                    <li class="icon-7"><span class="visually-hidden">Wi-Fi</span></li>
+                                    <li class="icon-8"><span class="visually-hidden">Phone</span></li>
+                                    <li class="icon-9"><span class="visually-hidden">Mini bar</span></li>
+                                    <li class="icon-10"><span class="visually-hidden">Kitchen</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="room-price"><span class="from">From</span> <span
+                                    class="price promo-title">$150</span>
+                                <a href="#">Book
+                                    Now</a></p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-md-12">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <div class="room-img">
+                                <div class="box">
+                                    <img src="img/room/room-3.jpg" alt="Room photo">
+                                    <div class="content">
+                                        <h3>Standard Single</h3>
+                                        <a href="#" data-toggle="modal" data-target="#modalApartment"
+                                            aria-label="Book this apartment"><i class="fa fa-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="room-desc">
+                                <h3>
+                                    <a href="#" data-toggle="modal" data-target="#modalApartment"
+                                        aria-label="Book this apartment">Standard Single</a>
+                                </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p class="room-size"><i class="fa fa-arrow-right"></i> <span>Size: 260 sq ft</span>
+                                    <i class="fa fa-arrow-right"></i> <span>Beds: 2 Single(s)</span></p>
+                                <ul class="room-services">
+                                    <li class="icon-1"><span class="visually-hidden">Secutiry</span></li>
+                                    <li class="icon-2"><span class="visually-hidden">Air conditioner</span></li>
+                                    <li class="icon-3"><span class="visually-hidden">Bathtub</span></li>
+                                    <li class="icon-4"><span class="visually-hidden">Shower</span></li>
+                                    <li class="icon-5"><span class="visually-hidden">Towels</span></li>
+                                    <li class="icon-6"><span class="visually-hidden">TV</span></li>
+                                    <li class="icon-7"><span class="visually-hidden">Wi-Fi</span></li>
+                                    <li class="icon-8"><span class="visually-hidden">Phone</span></li>
+                                    <li class="icon-9"><span class="visually-hidden">Mini bar</span></li>
+                                    <li class="icon-10"><span class="visually-hidden">Kitchen</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="room-price"><span class="from">From</span> <span
+                                    class="price promo-title">$150</span>
+                                <a href="#">Book
+                                    Now</a></p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-md-12">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <div class="room-img">
+                                <div class="box">
+                                    <img src="img/room/room-4.jpg" alt="Room photo">
+                                    <div class="content">
+                                        <h3>Standard Single</h3>
+                                        <a href="#" data-toggle="modal" data-target="#modalApartment"
+                                            aria-label="Book this apartment"><i class="fa fa-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="room-desc">
+                                <h3>
+                                    <a href="#" data-toggle="modal" data-target="#modalApartment"
+                                        aria-label="Book this apartment">Standard Single</a>
+                                </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p class="room-size"><i class="fa fa-arrow-right"></i> <span>Size: 260 sq ft</span>
+                                    <i class="fa fa-arrow-right"></i> <span>Beds: 2 Single(s)</span></p>
+                                <ul class="room-services">
+                                    <li class="icon-1"><span class="visually-hidden">Secutiry</span></li>
+                                    <li class="icon-2"><span class="visually-hidden">Air conditioner</span></li>
+                                    <li class="icon-3"><span class="visually-hidden">Bathtub</span></li>
+                                    <li class="icon-4"><span class="visually-hidden">Shower</span></li>
+                                    <li class="icon-5"><span class="visually-hidden">Towels</span></li>
+                                    <li class="icon-6"><span class="visually-hidden">TV</span></li>
+                                    <li class="icon-7"><span class="visually-hidden">Wi-Fi</span></li>
+                                    <li class="icon-8"><span class="visually-hidden">Phone</span></li>
+                                    <li class="icon-9"><span class="visually-hidden">Mini bar</span></li>
+                                    <li class="icon-10"><span class="visually-hidden">Kitchen</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="room-price"><span class="from">From</span> <span
+                                    class="price promo-title">$150</span>
+                                <a href="#">Book
+                                    Now</a></p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-md-12">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <div class="room-img">
+                                <div class="box">
+                                    <img src="img/room/room-5.jpg" alt="Room photo">
+                                    <div class="content">
+                                        <h3>Standard Single</h3>
+                                        <a href="#" data-toggle="modal" data-target="#modalApartment"
+                                            aria-label="Book this apartment"><i class="fa fa-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="room-desc">
+                                <h3>
+                                    <a href="#" data-toggle="modal" data-target="#modalApartment"
+                                        aria-label="Book this apartment">Standard Single</a>
+                                </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p class="room-size"><i class="fa fa-arrow-right"></i> <span>Size: 260 sq ft</span>
+                                    <i class="fa fa-arrow-right"></i> <span>Beds: 2 Single(s)</span></p>
+                                <ul class="room-services">
+                                    <li class="icon-1"><span class="visually-hidden">Secutiry</span></li>
+                                    <li class="icon-2"><span class="visually-hidden">Air conditioner</span></li>
+                                    <li class="icon-3"><span class="visually-hidden">Bathtub</span></li>
+                                    <li class="icon-4"><span class="visually-hidden">Shower</span></li>
+                                    <li class="icon-5"><span class="visually-hidden">Towels</span></li>
+                                    <li class="icon-6"><span class="visually-hidden">TV</span></li>
+                                    <li class="icon-7"><span class="visually-hidden">Wi-Fi</span></li>
+                                    <li class="icon-8"><span class="visually-hidden">Phone</span></li>
+                                    <li class="icon-9"><span class="visually-hidden">Mini bar</span></li>
+                                    <li class="icon-10"><span class="visually-hidden">Kitchen</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="room-price"><span class="from">From</span> <span
+                                    class="price promo-title">$150</span>
+                                <a href="#">Book
+                                    Now</a></p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modalApartment" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="spinner">
+                                <div class="slider-spinner spinner-border" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </div>
+                            <ul class="slider visually-hidden">
+                                <li><img src="./img/room-slider/room-1.jpg" alt="Apartment"></li>
+                                <li><img src="./img/room-slider/room-2.jpg" alt="Apartment"></li>
+                                <li><img src="./img/room-slider/room-3.jpg" alt="Apartment"></li>
+                                <li><img src="./img/room-slider/room-4.jpg" alt="Apartment"></li>
+                                <li><img src="./img/room-slider/room-5.jpg" alt="Apartment"></li>
+                                <li><img src="./img/room-slider/room-6.jpg" alt="Apartment"></li>
+                            </ul>
+                            <ul class="slider-nav visually-hidden">
+                                <li><img src="./img/room-slider/room-1.jpg" alt="Apartment"></li>
+                                <li><img src="./img/room-slider/room-2.jpg" alt="Apartment"></li>
+                                <li><img src="./img/room-slider/room-3.jpg" alt="Apartment"></li>
+                                <li><img src="./img/room-slider/room-4.jpg" alt="Apartment"></li>
+                                <li><img src="./img/room-slider/room-5.jpg" alt="Apartment"></li>
+                                <li><img src="./img/room-slider/room-6.jpg" alt="Apartment"></li>
+                            </ul>
+                        </div>
+                        <div class="col-12">
+                            <h2>Lorem ipsum dolor</h2>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta facilis voluptas
+                                architecto, laborum illum, amet rerum numquam minus nesciunt asperiores sapiente
+                                voluptatem consequatur maxime saepe iste, reprehenderit harum quia! Sint deserunt
+                                nesciunt veniam officiis id dolorem quidem reprehenderit voluptas? Ex.
+                            </p>
+                            <div class="modal-btn">
+                                <a class="btn" href="#">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="social">
+                        <li><a href="#" aria-label="Instagram">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" aria-label="Facebook">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+
+                        <li><a href="#">
+                                <i class="fa fa-facebook-f" aria-label="Twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <p class="copyright">Copyright © <a href="#">Hotel Royal</a> All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i> <span class="visually-hidden">Back to
+            top</span></a>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
+        integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ=="
+        crossorigin="anonymous"></script>
+    <script src="js/vendor/slick/slick.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>

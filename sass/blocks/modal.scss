@@ -1,0 +1,35 @@
+.modal {
+	& .modal-header {
+		& .close {
+			position: relative;
+			margin: 0 auto;
+			background-color: $first;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			outline: none;
+
+			& span {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				color: $white;
+			}
+		}
+	}
+
+	& .spinner {
+		text-align: center;
+	}
+
+	& .modal-btn {
+		text-align: center;
+	}
+
+	& .btn {
+		@include button();
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}

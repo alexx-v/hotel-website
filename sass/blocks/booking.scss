@@ -1,0 +1,8 @@
+.booking {
+	@include padding();
+
+	.btn {
+		@include button();
+		display: inline-block;
+	}
+}

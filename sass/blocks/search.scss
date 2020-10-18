@@ -1,0 +1,19 @@
+.search {
+	padding-top: 30px;
+	padding-bottom: 20px;
+	background-color: $white;
+
+	& .btn {
+		@include button();
+		margin-top: 31px;
+	}
+
+	& .input-group-text {
+		cursor: pointer;
+	}
+}
+
+.rooms-page,
+.booking-page {
+	background-color: $subBg;
+}

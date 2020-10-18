@@ -1,0 +1,49 @@
+@mixin visually-hidden() {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0, 0, 0, 0);
+	overflow: hidden;
+}
+
+@mixin button() {
+	padding-left: 30px;
+	padding-right: 30px;
+	color: $first;
+	background: $second;
+	border-color: $second;
+	border-radius: 0px;
+	outline: none;
+	box-shadow: none;
+
+	&:hover,
+	&:focus {
+		color: $second;
+		background: $first;
+		border-color: $first;
+	}
+}
+
+@mixin button-2 {
+	@include button();
+	background: $first;
+	color: $second;
+
+	&:hover,
+	&:focus {
+		color: $first;
+		background: $white;
+	}
+}
+
+@mixin padding($pt: 45px, $pr: initial, $pb: 60px, $pl: initial) {
+	padding-top: $pt;
+	padding-right: $pr;
+	padding-bottom: $pb;
+	padding-left: $pl;
+}

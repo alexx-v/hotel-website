@@ -1,0 +1,55 @@
+.slider-top {
+	max-height: calc(100vh - 60px);
+	overflow: hidden;
+
+	& .carousel-item {
+		position: relative;
+		& img {
+			width: 100%;
+		}
+
+		&.active {
+			& h2 {
+				display: block;
+				animation: moveToRight 1.5s ease;
+			}
+		}
+	}
+
+	& .carousel-caption {
+		position: absolute;
+		top: 60px;
+		left: 0;
+		right: 0;
+		height: 100px;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 1;
+
+		& h2 {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			transform: translateY(-50%);
+			display: none;
+			color: $first;
+		}
+	}
+
+	@keyframes moveToRight {
+		from {
+			left: -100%;
+		}
+		to {
+			left: 0;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.slider-top {
+		.promo-title {
+			font-size: 1.125rem;
+		}
+	}
+}

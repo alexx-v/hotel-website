@@ -1,0 +1,7 @@
+.contact {
+	@include padding();
+
+	& .btn {
+		@include button();
+	}
+}
